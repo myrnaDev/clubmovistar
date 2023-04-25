@@ -1,0 +1,1196 @@
+@font-face {
+  font-family: "TelefonicaWeb-Light";
+  src: url("../fonts/light/TelefonicaWeb-Light.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/light/TelefonicaWeb-Light.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/light/TelefonicaWeb-Light.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/light/TelefonicaWeb-Light.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/light/TelefonicaWeb-Light.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/light/TelefonicaWeb-Light.svg#svgTelefonicaWeb-Light")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "TelefonicaWeb-Bold";
+  src: url("../fonts/bold/TelefonicaWeb-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bold/TelefonicaWeb-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bold/TelefonicaWeb-Bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/bold/TelefonicaWeb-Bold.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/bold/TelefonicaWeb-Bold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bold/TelefonicaWeb-Bold.svg#svgTelefonicaWeb-Bold")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "TelefonicaWeb-Regular";
+  src: url("../fonts/regular/TelefonicaWeb-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/regular/TelefonicaWeb-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/regular/TelefonicaWeb-Regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/regular/TelefonicaWeb-Regular.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../fonts/regular/TelefonicaWeb-Regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/regular/TelefonicaWeb-Regular.svg#svgTelefonicaWeb-Regular")
+      format("svg"); /* Legacy iOS */
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "TelefonicaWeb-Light", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #50535a;
+}
+a {
+  color: #50535a;
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #50535a;
+}
+.coolgray {
+  color: #86888c;
+}
+.white {
+  color: #ffffff;
+}
+.graybg {
+  background-color: #f3f3f3;
+}
+.graybg2 {
+  background-color: #f1f4f5;
+}
+.pad5 {
+  padding: 5em 0;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*------------------------------
+:: Pre Header
+------------------------------*/
+.preheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  background-color: #00a9e0;
+  height: 35px;
+  padding: 0 15px;
+  line-height: 35px;
+}
+ul#pre {
+  float: left;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+}
+ul#pre li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 4%;
+}
+ul#pre li a,
+.pre2 a {
+  color: #ffffff;
+  font-family: "TelefonicaWeb-Light", Arial, sans-serif;
+  font-size: 0.9em;
+}
+.pre2 {
+  float: right;
+  width: 40%;
+  text-align: right;
+  display: none;
+}
+.pre2 a {
+  text-align: right;
+}
+@media (min-width: 480px) {
+  ul#pre {
+    width: 60%;
+  }
+  .pre2 {
+    display: block;
+  }
+}
+@media (min-width: 767px) {
+  .preheader {
+    padding: 0 35px;
+  }
+  ul#pre li a,
+  .pre2 a {
+    font-size: 1em;
+  }
+}
+/*------------------------------
+:: Header
+------------------------------*/
+#header {
+  height: 120px;
+  width: 100%;
+  display: block;
+  margin-top: 35px;
+  clear: both;
+  padding: 0;
+}
+#header::after {
+  clear: both;
+}
+.clubmovistar {
+  float: left;
+  width: 18.7%;
+  height: auto;
+  padding-left: 2%;
+}
+.clubmovistar img {
+  width: 100%;
+  height: auto;
+  max-width: 154px;
+}
+.inicia {
+  float: right;
+  width: 22%;
+  height: auto;
+  text-align: right;
+  padding-right: 2%;
+  padding-top: 3%;
+}
+.inicia img {
+  width: 100%;
+  height: auto;
+  max-width: 212px;
+}
+ul#menu {
+  width: 59.3%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: none;
+}
+ul#menu li {
+  list-style-type: none;
+  display: inline-block;
+}
+ul#menu,
+ul#menu li a {
+  font-family: "TelefonicaWeb-Light", Arial, sans-serif;
+  color: #86898d;
+  font-size: 1.1em;
+  height: 120px;
+  line-height: 120px;
+}
+@media (min-width: 767px) {
+  ul#menu {
+    display: block;
+  }
+  ul#menu li {
+    padding: 0 2%;
+  }
+  ul#menu,
+  ul#menu li a {
+    font-size: 1.14em;
+  }
+  .clubmovistar {
+    padding-top: 1.5%;
+  }
+  .inicia {
+    padding-top: 1.5%;
+  }
+}
+@media (min-width: 1000px) {
+  ul#menu,
+  ul#menu li a {
+    font-size: 1.2em;
+  }
+  #header {
+    padding: 0 2%;
+  }
+  .inicia {
+    padding-top: 0.5%;
+  }
+  .clubmovistar {
+    padding-top: 0.5%;
+  }
+}
+@media (min-width: 1200px) {
+  #header {
+    padding: 0 5%;
+  }
+  ul#menu li {
+    padding: 0 5%;
+  }
+  .inicia,
+  .clubmovistar {
+    padding-top: 0px;
+  }
+}
+@media (min-width: 1500px) {
+  ul#menu li {
+    padding: 0 8%;
+  }
+}
+
+/*------------------------------
+:: Header Mob (menu responsive)
+------------------------------*/
+#headermob {
+  display: block;
+  margin-top: 35px;
+  height: 80px;
+}
+#header {
+  display: none;
+}
+.clubmob {
+  width: 32.7%;
+  float: left;
+  padding-top: 2%;
+  padding-left: 15px;
+}
+.iniciamob {
+  width: 40%;
+  padding-top: 2%;
+  padding-left: 15px;
+  float: right;
+  margin-right: 60px;
+}
+.clubmob img {
+  width: 100%;
+  height: auto;
+  max-width: 120px;
+}
+.iniciamob img {
+  width: 100%;
+  height: auto;
+  max-width: 188px;
+}
+@media (min-width: 380px) {
+  #headermob {
+    height: 120px;
+  }
+}
+@media (min-width: 480px) {
+  .clubmob {
+    padding-top: 2%;
+  }
+  .iniciamob {
+    width: 40%;
+    padding-top: 0%;
+  }
+}
+@media (min-width: 767px) {
+  #headermob {
+    display: none;
+  }
+  #header {
+    display: block;
+  }
+}
+/*------------------------------
+:: Hamburger and Menu Responsive
+------------------------------*/
+.menu-wrapper {
+  position: absolute;
+  top: 48px;
+  right: 15px;
+  bottom: 0;
+  width: 35px;
+  height: 50px;
+  cursor: pointer;
+}
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 35px;
+  height: 3px;
+}
+.hamburger-menu {
+  position: relative;
+  transform: translateY(25px);
+  background: #00a9e0;
+  transition: all 0ms 300ms;
+}
+.hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background: #00a9e0;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: #00a9e0;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@media (min-width: 375px) {
+  .menu-wrapper {
+    top: 60px;
+  }
+}
+
+/*------------------------------
+:: Dropdown menu
+------------------------------*/
+ul.drop {
+  width: 100%;
+  margin: 15px 0 0 0;
+  padding: 0;
+  height: 0;
+  -webkit-transition: all 450ms ease;
+  -moz-transition: all 450ms ease;
+  -ms-transition: all 450ms ease;
+  -o-transition: all 450ms ease;
+  transition: all 450ms ease;
+}
+ul.drop.opened {
+  height: 153px;
+}
+ul.drop li {
+  list-style-type: none;
+  display: block;
+}
+ul.drop li.last {
+  border-bottom: none;
+}
+ul.drop li a {
+  display: block;
+  padding: 15px 0;
+  border-top: none;
+  text-align: center;
+  border-top: 1px solid #dee0e3;
+}
+@media (min-width: 380px) {
+  ul.drop {
+    margin: 0;
+  }
+}
+
+@media (min-width: 767px) {
+  ul.drop {
+    display: none;
+  }
+}
+/*------------------------------
+:: Hero
+------------------------------*/
+#hero {
+  position: relative;
+  display: block;
+}
+
+.sliderhero {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+}
+.sliderhero img {
+  width: 100%;
+  height: auto;
+}
+.slick-track {
+  overflow: hidden;
+}
+.slidesherowrap {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  bottom: 30px;
+  width: 100%;
+  max-width: 320px;
+  height: 150px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+.slidesherowrap::after {
+  clear: both;
+}
+.slidesheroglobo,
+.slidesherotext {
+  float: left;
+}
+.slidesheroglobo {
+  width: 20%;
+  padding: 0 0 0 0px;
+}
+.slidesherotext {
+  width: 65%;
+  padding: 40px 0 0 15px;
+}
+.slidesheroglobo img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+}
+.slidesherotext {
+  color: #ffffff;
+  z-index: 3;
+  display: block;
+}
+.slidesherotext .stitle {
+  font-family: "TelefonicaWeb-Regular", Arial, sans-serif;
+  font-size: 1.1em;
+  display: block;
+  width: 100%;
+}
+.slidesherotext .stext {
+  font-family: "TelefonicaWeb-Bold", Arial, sans-serif;
+  font-size: 1.1em;
+  display: block;
+  width: 100%;
+}
+.sliderhero .hero1500 {
+  display: none;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.sliderhero .heroc {
+  display: none;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.sliderhero .heromob {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-bottom: 65.18%;
+}
+.sliderhero .hero1500img {
+  display: none;
+  position: absolute;
+}
+.sliderhero .herocimg {
+  display: none;
+  position: absolute;
+}
+.sliderhero .heromobimg {
+  display: block;
+  position: absolute;
+}
+
+@media (min-width: 480px) {
+  .slidesherowrap {
+    max-width: 480px;
+    height: 150px;
+    bottom: 20px;
+  }
+  .slidesheroglobo {
+    width: 25%;
+    padding: 0 0 0 35px;
+  }
+  .slidesherotext {
+    width: 60%;
+    padding: 40px 0 0 15px;
+  }
+  .slidesherotext .stitle,
+  .slidesherotext .stext {
+    font-size: 1.3em;
+  }
+}
+@media (min-width: 580px) {
+  .slidesherowrap {
+    max-width: 580px;
+  }
+}
+@media (min-width: 630px) {
+  .slidesherowrap {
+    max-width: 630px;
+  }
+  .slidesherotext .stitle,
+  .slidesherotext .stext {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 767px) {
+  .slidesherowrap {
+    max-width: 767px;
+    height: 150px;
+    bottom: 40px;
+  }
+  .slidesheroglobo img {
+    max-width: 150px;
+  }
+  .slidesherotext .stitle,
+  .slidesherotext .stext {
+    font-size: 1.6em;
+  }
+  .slidesherotext {
+    width: 60%;
+  }
+  .sliderhero .heromob {
+    display: none;
+  }
+  .sliderhero .hero1500 {
+    display: none;
+  }
+  .sliderhero .heroc {
+    display: block;
+    padding-bottom: 40.19%;
+  }
+  .sliderhero .hero1500img {
+    display: none;
+  }
+  .sliderhero .heromobimg {
+    display: none;
+  }
+  .sliderhero .herocimg {
+    display: block;
+  }
+}
+@media (min-width: 1000px) {
+  .slidesherowrap {
+    max-width: 999px;
+    height: 200px;
+  }
+  .slidesherotext .stitle,
+  .slidesherotext .stext {
+    font-size: 2.3em;
+  }
+  .slidesherotext {
+    width: 70%;
+  }
+}
+@media (min-width: 1500px) {
+  .sliderhero .heromob {
+    display: none;
+  }
+  .sliderhero .heroc {
+    display: none;
+  }
+  .sliderhero .hero1500 {
+    display: block;
+    padding-bottom: 33.33%;
+  }
+
+  .sliderhero .heromobimg {
+    display: none;
+  }
+  .sliderhero .herocimg {
+    display: none;
+  }
+  .sliderhero .hero1500img {
+    display: block;
+  }
+}
+/*------------------------------
+:: Arrows Sliders (todos)
+------------------------------*/
+
+.anext,
+.aprev {
+  position: absolute;
+  top: 40%;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 99;
+}
+.anext {
+  right: -25px;
+}
+.aprev {
+  left: -25px;
+}
+.anext img {
+  max-width: 20px;
+}
+.aprev img {
+  max-width: 20px;
+}
+
+.anext.heros,
+.aprev.heros {
+  top: 50%;
+  height: 40px;
+}
+.anext.heros {
+  right: 15px;
+}
+.aprev.heros {
+  left: 15px;
+}
+
+/*------------------------------
+:: Paging Sliders (dots) (todos)
+------------------------------*/
+/* Hero dots */
+.sliderhero .slick-dots {
+  bottom: 10px;
+}
+.sliderhero .slick-dots li button:before {
+  font-size: 18px;
+  color: #cdcfd2;
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  color: #ffffff;
+}
+.sliderhero.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+/* Benefits dots */
+#benefits .slick-dots {
+  bottom: -80px;
+}
+#benefits .slick-dots li button:before {
+  font-size: 18px;
+  color: #d0dade;
+  opacity: 1;
+}
+#benefits li.slick-active button:before {
+  color: #5bc500;
+}
+
+/* Custom Paging for Robots Slider */
+#robots .slick-dots {
+  bottom: -80px;
+}
+#robots .slick-dots li {
+  width: 70px;
+  margin: 0;
+}
+#robots .slick-dots a.robolink {
+  display: block;
+}
+.robotab {
+  height: 12px;
+  background-color: #b7c6cb;
+  display: block;
+}
+#robots .slick-active .robotab {
+  background-color: #00a9e0;
+}
+#robots .roboimg {
+  opacity: 0;
+  width: 20px;
+  margin-bottom: 20px;
+}
+#robots .slick-active .roboimg {
+  opacity: 1;
+}
+@media (min-width: 400px) {
+  #robots .slick-dots li {
+    width: 90px;
+  }
+}
+@media (min-width: 767px) {
+  #robots .slick-dots li {
+    width: 160px;
+  }
+  .robotab {
+    height: 16px;
+  }
+}
+/*------------------------------
+:: Body
+------------------------------*/
+.icon-svg {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.icon-svg.tool {
+  max-width: 60px;
+}
+.icon-svg.preguntas {
+  max-width: 100px;
+}
+.icon-svg.personas {
+  max-width: 80px;
+}
+.icon-svg.funcion {
+  max-width: 60px;
+}
+h2.titleblue,
+h2.titlegreen,
+h2.titlewhite,
+h2.titlespecial {
+  font-family: "TelefonicaWeb-Bold", Arial, sans-serif;
+  font-size: 1.9em;
+  text-align: center;
+  margin: 5px auto 45px auto;
+}
+h2.titleblue {
+  color: #00a9e0;
+}
+h2.titlegreen {
+  color: #5bc500;
+}
+h2.titlewhite {
+  color: #ffffff;
+}
+
+h2 span.reg {
+  font-family: "TelefonicaWeb-Regular", Arial, sans-serif;
+}
+p {
+  font-family: "TelefonicaWeb-Light", Arial, sans-serif;
+  color: #86898d;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+h2 {
+  font-family: "TelefonicaWeb-Light", Arial, sans-serif;
+  color: #50535a;
+  font-size: 1.3em;
+  text-align: center;
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+}
+
+/*------------------------------
+:: Como es el Club : Video
+------------------------------*/
+.multicont {
+  position: relative;
+}
+.pad5.multicont {
+  padding: 5em 0 0 0;
+}
+.multibg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  max-width: 1244px;
+  display: none;
+  overflow: hidden;
+}
+.fondo {
+  display: none;
+}
+.fondoxl {
+  display: none;
+}
+h2.titlespecial {
+  color: #00a9e0;
+}
+.toolw {
+  display: none;
+}
+.toolb {
+  display: block;
+}
+.conoce {
+  position: relative;
+  z-index: 1;
+}
+#vid {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+#videoContainer {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+  margin: 30px 0 0 0;
+}
+#videoContainer iframe,
+#videoContainer object,
+#videoContainer embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 767px) {
+  #vid {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fondo,
+  .multibg {
+    display: block;
+  }
+  .fondoxl {
+    display: none;
+  }
+  h2.titlespecial {
+    color: #ffffff;
+  }
+  .toolw {
+    display: block;
+  }
+  .toolb {
+    display: none;
+  }
+}
+@media (min-width: 1650px) {
+  .fondo {
+    display: none;
+  }
+  .fondoxl {
+    display: block;
+  }
+  h2.titlespecial {
+    color: #00a9e0;
+  }
+  .toolw {
+    display: none;
+  }
+  .toolb {
+    display: block;
+  }
+}
+
+/*------------------------------
+:: Robots : Slick
+------------------------------*/
+.robot-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+img:focus,
+div:focus {
+  outline: 0;
+}
+#robots img {
+  width: 100%;
+  height: auto;
+}
+#robots h3 {
+  text-align: center;
+  color: #00a9e0;
+  font-family: "TelefonicaWeb-Bold", Arial, sans-serif;
+  font-size: 1.6em;
+}
+#robots p {
+  font-size: 1.1em;
+  color: #86898d;
+}
+#robots .functionE img.fun {
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  max-width: 250px;
+}
+#robots .robotext {
+  display: block;
+  height: auto;
+  color: #86898d;
+}
+.roboteam {
+  margin: 0 auto;
+  position: relative;
+  padding: 0 1em 1em 1em;
+  z-index: 0;
+}
+.roboteam img {
+  max-width: 180px;
+  width: 100%;
+  display: none;
+}
+.roboteam img.robota {
+  position: absolute;
+  right: 0;
+}
+.roboteam::after {
+  clear: both;
+}
+@media (min-width: 430px) {
+  .roboteam img {
+    max-width: 150px;
+    width: 100%;
+    display: inline-block;
+  }
+}
+@media (min-width: 837px) {
+  .roboteam {
+    -webkit-transform: translate(0, -100px);
+    -moz-transform: translate(0, -100px);
+    -ms-transform: translate(0, -100px);
+    -o-transform: translate(0, -100px);
+    transform: translate(0, -100px);
+  }
+}
+@media (min-width: 1000px) {
+  .roboteam {
+    max-width: 1244px;
+    -webkit-transform: translate(0, -130px);
+    -moz-transform: translate(0, -130px);
+    -ms-transform: translate(0, -130px);
+    -o-transform: translate(0, -130px);
+    transform: translate(0, -130px);
+  }
+  #robots p {
+    font-size: 1.3em;
+  }
+  #robots h3 {
+    font-size: 1.9em;
+  }
+  .roboteam img {
+    width: 100%;
+    max-width: 236px;
+  }
+}
+
+/*------------------------------
+:: Beneficios : Slick
+------------------------------*/
+#ben.pad5 {
+  padding: 5em 0 0 0;
+}
+.ben-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+  min-height: 170px;
+}
+img:focus,
+div:focus {
+  outline: 0;
+}
+#benefits img {
+  width: 100%;
+  height: auto;
+}
+.benbg {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 0;
+  padding: 0 10%;
+}
+.benbg img {
+  width: 100%;
+  height: auto;
+  max-width: 773px;
+  margin: 0 auto;
+}
+@media (min-width: 1000px) {
+  .ben-wrapper,
+  .robot-wrapper {
+    width: 100%;
+    min-height: 230px;
+  }
+  .benbg {
+    padding: 0;
+  }
+}
+/*------------------------------
+:: Preguntas: Accordion
+------------------------------*/
+.accordion {
+  font-size: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+.accordion-header {
+  padding: 0.6em 0.9em;
+  background: #5bc500;
+  color: white;
+  font-family: "TelefonicaWeb-Bold", Arial, sans-serif;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: all 0.3s;
+  margin: 0.4em 0 0 0;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+.accordion-header:hover {
+  background: #4fab01;
+  position: relative;
+  z-index: 5;
+}
+.accordion-body {
+  background: #ffffff;
+  color: #86898d;
+  display: none;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+.accordion-body__contents {
+  padding: 1.5em 1.5em;
+  font-size: 1.1em;
+}
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+.accordion__item > .accordion-header:after {
+  content: "\f3d0";
+  font-family: IonIcons;
+  font-size: 1.3em;
+  float: right;
+  position: relative;
+  top: 0px;
+  transition: 0.3s all;
+  transform: rotate(0deg);
+}
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+.accordion__item.active .accordion-header {
+  background: #4fab01;
+}
+.accordion__item .accordion__item .accordion-header {
+  background: #f1f1f1;
+  color: black;
+}
+
+@media screen and (min-width: 1000px) {
+  .accordion {
+    width: 80%;
+  }
+  .accordion-header {
+    font-size: 1.3em;
+  }
+}
+
+/*------------------------------
+:: Footer
+------------------------------*/
+#footer {
+  border-top: 1px solid #e4e4e4;
+  height: 70px;
+  line-height: 70px;
+  width: 100%;
+  display: block;
+  background-color: #ffffff;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.line {
+  width: 1px;
+  height: 10px;
+  display: inline-block;
+  background-color: #50535a;
+}
+.telefonica {
+  display: block;
+  height: 70px;
+  text-align: center;
+}
+
+ul#legales {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul#legales li {
+  list-style-type: none;
+  padding: 0 10px;
+  font-size: 0.8em;
+  display: inline-block;
+}
+@media (min-width: 400px) {
+  .telefonica {
+    display: inline;
+    float: left;
+    text-align: left;
+  }
+  ul#legales {
+    display: inline;
+    float: right;
+    text-align: right;
+  }
+  #footer::after {
+    clear: both;
+  }
+}
+
+/*------------------------------
+:: Media Queries
+------------------------------*/
+
+@media (min-width: 992px) {
+}
+
+/*------------------------------
+:: Helper classes
+------------------------------*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
